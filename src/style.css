@@ -1,0 +1,69 @@
+input {
+  width: 105%;
+}
+.center-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 30%;
+  min-height: 30vh;
+  margin-top: 5rem;
+  border-radius: 1rem;
+  background: radial-gradient(
+    circle at -8.9% 51.2%,
+    rgb(255, 124, 0) 0%,
+    rgb(255, 124, 0) 15.9%,
+    rgb(255, 163, 77) 15.9%,
+    rgb(255, 163, 77) 24.4%,
+    rgb(19, 30, 37) 24.5%,
+    rgb(19, 30, 37) 66%
+  );
+}
+.btn-container {
+  position: relative;
+  left: -13px;
+  padding: 0.5rem;
+}
+.button {
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(0, 0, 0, 0.15) 100%
+    ),
+    radial-gradient(
+        at top center,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(0, 0, 0, 0.4) 120%
+      )
+      #989898;
+  border: none;
+  width: 120%;
+  border-radius: 1em;
+  margin: 0.5rem;
+  color: hsl(0, 0%, 100%);
+}
+
+@media (max-width: 575.98px) {
+  .center-container {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 50px auto;
+    max-width: 95%;
+  }
+
+  .button {
+    width: 150%;
+    margin: -0.5rem;
+    margin-top: 15px;
+  }
+  .d-reponsive {
+    display: flex;
+    flex-direction: row;
+  }
+  input {
+    position: absolute;
+    top: 80px;
+    left: 40px;
+    width: 75%;
+  }
+}
